@@ -2,7 +2,7 @@
   "name": "node_ts_api_setup",
   "version": "1.0.0",
   "description": "Large project template",
-  "main": "app.ts",
+  "main": "dist/public/app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
