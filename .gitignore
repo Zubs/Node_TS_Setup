@@ -1,0 +1,4 @@
+## You'd want to gitignore these files
+
+# env files
+#   .env
