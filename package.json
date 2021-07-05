@@ -1,0 +1,23 @@
+{
+  "name": "Node_TS_API_Setup",
+  "version": "1.0.0",
+  "description": "Node_TS_API_Setup",
+  "main": "src/app.ts",
+  "scripts": {
+    "dev": "nodemon src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zubs/Node_TS_Setup.git"
+  },
+  "keywords": [],
+  "author": "Zubs <zubairidrisaweda@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zubs/Node_TS_Setup/issues"
+  },
+  "homepage": "https://github.com/Zubs/Node_TS_Setup#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}
