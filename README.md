@@ -1,1 +1,0 @@
-# Node Typescript API Setup
