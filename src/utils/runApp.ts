@@ -1,5 +1,6 @@
 import Listr from 'listr'
 import { startApp, setRoutes, setStaticFolder } from './app'
+import { connectDB } from './database'
 
 /**
  * Runs all the tasks to start application
