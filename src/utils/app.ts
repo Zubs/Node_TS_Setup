@@ -4,6 +4,7 @@ import { urlencoded } from 'body-parser'
 import cors from 'cors'
 const appRoute = require('../routes/api/appRoutes')
 import path from 'path'
+import { Logger } from './logger'
 
 /**
  * Set up routes and 404
@@ -31,4 +32,29 @@ import path from 'path'
  export function setStaticFolder() {
 	// Set static files
 	app.use(express.static(path.join(__dirname, '..', '..','dist', 'public')));
+}
+
+/**
+ * Initiate application
+ */
+ export function startApp() {
+
+	const PORT = process.env.PORT || 3000;
+	
+	// Set Greeting And Start App
+	if (process.env.NODE_ENV === "production") {
+		const greeting = "Application Started At PORT " + PORT + " in " + process.env.NODE_ENV + " Mode";
+
+		// Start app
+		app.listen(PORT, () => {
+			Logger(greeting, 'green');
+		});
+	} else {
+		const greeting = "Application Started At PORT " + PORT + "\nApplication can be found at " + terminalLink(chalk.yellow.bold('http://localhost:' + PORT), 'http://localhost:' + PORT);
+
+		// Start app
+		app.listen(PORT, () => {
+			Logger(greeting, 'green');
+		});
+	};
 }
