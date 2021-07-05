@@ -7,5 +7,4 @@ import { App } from '../../controllers/appController.ctrl';
 // Respond to /
 router.get('/', App);
 
-// Make code global
-module.exports = router;
+module.exports.router = router;
