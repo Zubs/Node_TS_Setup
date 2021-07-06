@@ -1,4 +1,5 @@
 # Node TypeScript API Starter
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1fb6f3c894a14a6da60d2d91ce368bee)](https://www.codacy.com/gh/Zubs/Node_TS_Setup/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Zubs/Node_TS_Setup&amp;utm_campaign=Badge_Grade)
 
 # Clone Project
 ```

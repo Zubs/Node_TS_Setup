@@ -28,3 +28,5 @@ if (process.env.NODE_ENV === 'production') {
 
 	Logger("Now Writing Logs To log/dev/access.log", 'green')
 }
+
+runApp()
