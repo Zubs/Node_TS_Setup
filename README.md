@@ -24,6 +24,8 @@ cp .env.example .env.dev
 ```
 npm run dev
 ```
+This should give display as follows.
+<img src="./docs/display.png">
 
 
 # Build

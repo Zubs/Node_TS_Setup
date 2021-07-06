@@ -5,7 +5,7 @@ import cors from 'cors'
 const appRoute = require('../routes/api/appRoutes')
 import path from 'path'
 import { Logger } from './logger'
-import terminalLink from 'terminal-link'
+// import terminalLink from 'terminal-link'
 import chalk from 'chalk'
 
 /**
@@ -41,7 +41,7 @@ import chalk from 'chalk'
  */
  export function startApp() {
 
-	const PORT = process.env.PORT || 3000;
+	const PORT = process.env.PORT || 8000;
 	
 	// Set Greeting And Start App
 	if (process.env.NODE_ENV === "production") {
@@ -52,7 +52,7 @@ import chalk from 'chalk'
 			Logger(greeting, 'green');
 		});
 	} else {
-		const greeting = "Application Started At PORT " + PORT + "\nApplication can be found at " + terminalLink(chalk.yellow.bold('http://localhost:' + PORT), 'http://localhost:' + PORT);
+		const greeting = "Application Started At PORT " + PORT + "\nApplication can be found at " // + terminalLink(chalk.yellow.bold('http://localhost:' + PORT), 'http://localhost:' + PORT);
 
 		// Start app
 		app.listen(PORT, () => {
